@@ -29,7 +29,7 @@ function SidebarContent({ onNavigate, collapsed = false }) {
     <div className={`sidebar-inner ${collapsed ? 'sidebar-inner-collapsed' : ''}`}>
       <div className="sidebar-header">
         <div className="sidebar-brand">
-          <img src="/ledgerwise-logo.png" alt="Ledgerwise logo" />
+          <img src={`${import.meta.env.BASE_URL}ledgerwise-logo.png`} alt="Ledgerwise logo" />
           {!collapsed && <div className="brand">Ledger<span style={{ color: 'yellow' }}>wise</span></div>}
           
         </div>
