@@ -27,7 +27,7 @@ function ProtectedRoute({ children }) {
 
 export default function App() {
   return (
-    <Router>
+   <Router basename="/Ledgerwise">
       <AuthProvider>
         <BookkeepingProvider>
         <Routes>
