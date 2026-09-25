@@ -20,7 +20,7 @@ export default function LoginPage() {
     <main className="auth-page">
       <section className="auth-card">
         <div className="auth-form">
-          <div className="auth-brand"><img alt="Ledgerwise logo" src="../Ledgerwise/ledgerwise-logo.png"> Ledger<span>wise</span></div>
+          <div className="auth-brand"><img alt="Ledgerwise logo" src="../ledgerwise-logo.png"> Ledger<span>wise</span></div>
           <h1>Welcome to Ledgerwise</h1>
           <p className="auth-subtitle">Sign in by entering information below</p>
           <form onSubmit={submit}>
