@@ -24,8 +24,8 @@ export default function LoginPage() {
           <h1>Welcome to Ledgerwise</h1>
           <p className="auth-subtitle">Sign in by entering information below</p>
           <form onSubmit={submit}>
-            <label>Email <em>*</em><input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required /></label>
-            <label>Password <em>*</em><input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required /></label>
+            <label>Email <em>*</em></label><input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <label>Password <em>*</em></label><input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
             <label className="remember-option"><input type="checkbox" checked={remember} onChange={(e) => setRemember(e.target.checked)} /> <span>Remember my preference</span></label>
             {error && <p className="form-error">{error}</p>}
             <button className="primary-button auth-submit" disabled={submitting}>{submitting ? 'Signing in...' : 'Sign In'}</button>
